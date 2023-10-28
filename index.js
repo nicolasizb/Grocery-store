@@ -20,7 +20,7 @@ function serverInit() {
     app.use(router)
 
     app.listen(3400)
-    console.log("Server on line")
+    console.log("Server on line Cloud")
 }
 
 serverInit()
