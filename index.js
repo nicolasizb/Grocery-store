@@ -19,7 +19,10 @@ function serverInit() {
     app.use(express.urlencoded({ extended: false }))
     app.use(router)
 
-    app.listen(3400)
+    const port = process.env.PORT || 3000;
+    app.listen(port, "0.0.0.0", function () {
+      // ...
+    });
     console.log("Server on line Cloud")
 }
 
